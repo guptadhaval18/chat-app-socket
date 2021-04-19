@@ -1,11 +1,11 @@
 {
   "name": "socket-chat",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
   },
   "engine": {
     "node": "15.11.0"
@@ -14,6 +14,22 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mustache": "^4.2.0",
     "socket.io": "^3.1.2"
-  }
+  },
+  "devDependencies": {
+    "expect": "^26.6.2",
+    "mocha": "^8.3.1",
+    "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guptadhaval18/chat-app-socket.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guptadhaval18/chat-app-socket/issues"
+  },
+  "homepage": "https://github.com/guptadhaval18/chat-app-socket#readme",
+  "description": ""
 }

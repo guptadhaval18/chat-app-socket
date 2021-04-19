@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Join Chat Group</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
-    <p>Welcome to the chat app.</p>
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script type="text/javascript" src="/js/index.js"></script>
+<body class="centered-form">
+    <div class="centered-form__form">
+        <form action="/chat.html">
+            <div class="form-field"><h3>Join Chat</h3></div>
+            <div class="form-field">
+                <lable>Display Name</lable>
+                <input type="text" name="name" autofocus>
+            </div>
+            <div class="form-field">
+                <lable>Room Name</lable>
+                <input type="text" name="room" autofocus>
+            </div>
+            <div class="form-field">
+                <button>Join</button>
+            </div>
+        </form>
+    </div>
+    
 </body>
 </html>
